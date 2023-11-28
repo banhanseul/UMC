@@ -13,6 +13,8 @@ public class MissionResponse {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class MissionDTO{
+
+        // 임시로 넣어놓을 데이터
         Long missionId;
         String name;
         Integer point;

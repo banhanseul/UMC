@@ -19,7 +19,7 @@ public class Category {
     @Column(nullable = false, length = 50)
     private String name;
 
-    // 가게
+    //가게
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
     private List<Store> storeList = new ArrayList<>();
 }

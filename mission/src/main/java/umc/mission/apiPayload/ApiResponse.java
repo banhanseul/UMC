@@ -25,12 +25,12 @@ public class ApiResponse<T> {
         return new ApiResponse<>(true, SuccessStatus._OK.getCode(), SuccessStatus._OK.getMessage(), result);
     }
 
-    // 미션완료의 경우 응답
+    // 미션 완료의 경우 응답
     public static <T> ApiResponse<T> onDone(T result){
         return new ApiResponse<>(true, SuccessStatus.DONE.getCode(), SuccessStatus.DONE.getMessage(), result);
     }
 
-    // 미션중의 경우 응답
+    // 미션 중일 경우 응답
     public static <T> ApiResponse<T> onIng(T result){
         return new ApiResponse<>(true, SuccessStatus.ING.getCode(), SuccessStatus.ING.getMessage(), result);
     }

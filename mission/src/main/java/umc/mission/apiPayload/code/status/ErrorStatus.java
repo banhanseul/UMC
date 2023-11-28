@@ -5,7 +5,6 @@ import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import umc.mission.apiPayload.code.BaseErrorCode;
 import umc.mission.apiPayload.code.ErrorReasonDTO;
-import umc.mission.apiPayload.code.ReasonDTO;
 
 @Getter
 @AllArgsConstructor

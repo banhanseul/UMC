@@ -13,13 +13,13 @@ import umc.mission.web.dto.MissionResponse;
 @RequiredArgsConstructor
 public class MissionRestController {
 
-    // 미션 성공
+    // 미션 성공 API
     @GetMapping("/missions/done")
     public ApiResponse<MissionResponse.MissionDTO> missionDoneAPI(){
         return ApiResponse.onDone(MissionConverter.tomissionDTO());
     }
 
-    // 미션 중
+    // 미션 중 API
     @GetMapping("/missions/nonpass")
     public ApiResponse<MissionResponse.MissionDTO> missionIngAPI(){
         return ApiResponse.onIng(MissionConverter.tomissionDTO());

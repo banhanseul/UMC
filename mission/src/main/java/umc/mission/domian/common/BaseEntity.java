@@ -13,6 +13,7 @@ import java.security.Timestamp;
 @EntityListeners(AuditingEntityListener.class)
 @Getter
 public abstract class BaseEntity {
+
     @CreatedDate
     private Timestamp createdAt;
 

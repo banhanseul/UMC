@@ -21,6 +21,7 @@ public class Region extends BaseEntity {
 
     private String local;
 
+    // 지역 존재 ..?
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "VARCHAR(10) DEFAULT 'YES'")
     private RegionStatus regionStatus;

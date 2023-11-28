@@ -15,5 +15,6 @@ public class ReasonDTO {
     private final String code;
     private final String message;
 
+    // 이건 어디다 쓰는건지 ..
     public boolean getInSuccess(){ return isSuccess; }
 }

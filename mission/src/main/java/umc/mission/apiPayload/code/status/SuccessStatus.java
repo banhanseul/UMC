@@ -10,7 +10,7 @@ import umc.mission.apiPayload.code.ReasonDTO;
 @AllArgsConstructor
 public enum SuccessStatus implements BaseCode {
 
-    // 일반적인 응답
+    // 일반 응답
     _OK(HttpStatus.OK, "2000", "성공입니다."),
 
     // 미션 성공에 대한 응답

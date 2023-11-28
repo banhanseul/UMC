@@ -34,6 +34,7 @@ public class Store extends BaseEntity {
 
     private String address;
 
+    // 가게 오픈 상태
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "VARCHAR(10) DEFAULT 'OPEN'")
     private StoreStatus storeStatus;

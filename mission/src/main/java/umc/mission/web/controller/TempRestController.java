@@ -17,6 +17,7 @@ public class TempRestController {
 
     private final TempQueryService tempQueryService;
 
+    // API
     @GetMapping("/test")
     public ApiResponse<TempResponse.TempTestDTO> testAPI(){
 

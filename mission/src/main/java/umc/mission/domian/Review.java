@@ -16,12 +16,12 @@ public class Review extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // 회원식별자
+    // 회원 식별자
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
     private Member member;
 
-    // 가게식별자
+    // 가게 식별자
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "store_id")
     private Store store;
@@ -35,6 +35,7 @@ public class Review extends BaseEntity {
 
     private String reply;
 
+    // 리뷰의 존재 유무
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "VARCHAR(10) DEFAULT 'EXIST'")
     private ReviewStatus reviewStatus;

@@ -20,6 +20,8 @@ public class TempResponse {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class TempExceptionDTO{
+
+        // 쿼리스트링 값
         Integer flag;
     }
 }

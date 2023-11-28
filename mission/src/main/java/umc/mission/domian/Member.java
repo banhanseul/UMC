@@ -52,6 +52,7 @@ public class Member extends BaseEntity {
 
     private Integer marketingCheck;
 
+    // 멤버의 존재 유무
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "VARCHAR(10) DEFAULT 'ACTIVE'")
     private MemberStatus memberStatus;

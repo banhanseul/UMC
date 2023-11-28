@@ -15,17 +15,17 @@ public class Mission extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // 회원식별자
+    // 회원 식별자
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id")
     private Member member;
 
-    // 가게식별자
+    // 가게 식별자
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "store_id")
     private Store store;
 
-    // 지역식별자
+    // 지역 식별자
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "region_id")
     private Region region;
@@ -39,6 +39,7 @@ public class Mission extends BaseEntity {
 
     private Integer point;
 
+    // 미션의 진행 여부
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "VARCHAR(10) DEFAULT 'UNPASS'")
     private MissionStatus missionStatus;
