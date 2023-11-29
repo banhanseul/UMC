@@ -14,7 +14,7 @@ public class MissionResponse {
     @AllArgsConstructor
     public static class MissionDTO{
 
-        // 임시로 넣어놓을 데이터
+        // 임시로 넣어 놓을 데이터
         Long missionId;
         String name;
         Integer point;
